@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta name="author" content="Risa Shinoda (篠田理沙)">
+      <meta name="author" content="Risa Shinoda (篠田理沙), Kaede Shiohara, Nakamasa Inoue, Kuniaki Saito, Hiroaki Santo, Fumio Okura">
       <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ScholarlyArticle",
-        "name": "BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment",
+        "headline": "BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment",
+        "url": "https://dahlian00.github.io/BioVITA_Page/",
+        "image": [
+          "https://dahlian00.github.io/BioVITA_Page/static/images/teaser.png",
+          "https://dahlian00.github.io/BioVITA_Page/static/images/bench_ex.png"
+        ],
+        "datePublished": "2026",
+        "isPartOf": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)",
+        "sameAs": "https://arxiv.org/abs/2603.23883",
+        "video": {
+          "@type": "VideoObject",
+          "name": "BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment (CVPR'26)",
+          "description": "A visual-textual-acoustic alignment framework for biology: a training dataset of 1.3 million audio clips and 2.3 million images covering 14,133 species, a unified representation model, and a species-level cross-modal retrieval benchmark.",
+          "thumbnailUrl": "https://i.ytimg.com/vi/3JvNlTGGAcs/hqdefault.jpg",
+          "uploadDate": "2026-05-20T08:37:25-07:00",
+          "duration": "PT6M7S",
+          "embedUrl": "https://www.youtube.com/embed/3JvNlTGGAcs"
+        },
         "author": [
           {
             "@type": "Person",
             "name": "Risa Shinoda",
             "alternateName": "篠田理沙",
             "url": "https://sites.google.com/view/risashinoda/home"
+          },
+          {
+            "@type": "Person",
+            "name": "Kaede Shiohara",
+            "url": "https://mapooon.github.io/"
+          },
+          {
+            "@type": "Person",
+            "name": "Nakamasa Inoue",
+            "url": "https://mmai.tech/"
+          },
+          {
+            "@type": "Person",
+            "name": "Kuniaki Saito",
+            "url": "https://ksaito-ut.github.io/"
+          },
+          {
+            "@type": "Person",
+            "name": "Hiroaki Santo",
+            "url": "https://sites.google.com/view/hiroaki-santo"
+          },
+          {
+            "@type": "Person",
+            "name": "Fumio Okura",
+            "url": "https://fokura.jp/"
           }
         ]
       }
@@ -22,10 +64,17 @@
     <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="description"
-          content="BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment">
-    <meta name="keywords" content="AnimalCLAP, Species Recognitaion, Aniaml, artificial intelligence, AI, artificial general intelligence">
+          content="BioVITA (CVPR 2026 Highlight): A visual-textual-acoustic alignment framework for biology: a training dataset of 1.3 million audio clips and 2.3 million images covering 14,133 species, a unified representation model, and a species-level cross-modal retrieval benchmark.">
+    <meta name="keywords" content="BioVITA, bioacoustics, animal sounds, species recognition, cross-modal retrieval, audio-image-text alignment, biodiversity, CVPR 2026">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment</title>
+    <link rel="canonical" href="https://dahlian00.github.io/BioVITA_Page/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment">
+    <meta property="og:description" content="A visual-textual-acoustic alignment framework for biology: a training dataset of 1.3 million audio clips and 2.3 million images covering 14,133 species, a unified representation model, and a species-level cross-modal retrieval benchmark.">
+    <meta property="og:url" content="https://dahlian00.github.io/BioVITA_Page/">
+    <meta property="og:image" content="https://dahlian00.github.io/BioVITA_Page/static/images/teaser.png">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="./static/images/agro_icon.png">
 
@@ -94,7 +143,7 @@
             <a href="https://sites.google.com/view/hiroaki-santo" style="text-decoration: none; color: inherit;">Hiroaki Santo<sup>1</sup></a>,
           </span>
           <span class="author-block">
-            <a href="https://fokura.jp/" style="text-decoration: none; color: inherit;">Fumio Okura<sup>1</sup></a>,
+            <a href="https://fokura.jp/" style="text-decoration: none; color: inherit;">Fumio Okura<sup>1</sup></a>
           </span>
         </div>
         <div class="is-size-6 has-text-centered mt-3">
@@ -150,11 +199,11 @@
         <div class="column has-text-centered">
         <img
           src="static/images/teaser.png"
-          alt="geometric reasoning"
+          alt="BioVITA overview: 1.3 million audio clips, 2.3 million images, and 14k species with 34 traits aligned by audio, image, and text encoders for species-level cross-modal retrieval"
           style="max-width: 80%; height: auto; margin-top: 2rem;"
         >
           <p class="mt-4">
-            We introduce BioVITA for biological visual-textualacoustic alignment. We curate a million-scale dataset, train a unified representation model, and develop a comprehensive specieslevel retrieval benchmark.
+            We introduce BioVITA for biological visual-textual-acoustic alignment. We curate a million-scale dataset, train a unified representation model, and develop a comprehensive species-level retrieval benchmark.
           </p>
         </div>
       </div>
@@ -200,7 +249,7 @@
           <div class="column is-four-fifths">
               <h2 class="title is-3">Video</h2>
               <div class="publication-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/3JvNlTGGAcs?si=yzMScZ6-Rarxjsqe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3JvNlTGGAcs?si=yzMScZ6-Rarxjsqe" title="BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment (CVPR'26)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -231,7 +280,7 @@
             <div class="content has-text-justified">
               <p>
                 We develop BioVITA Bench, a species-level retrieval benchmark spanning the six cross-modal directions. Our benchmark enables comprehensive analysis from multimodal, ecological, and generalization perspectives.
-              <img src="static/images/bench_ex.png" alt="algebraic reasoning" class="center">
+              <img src="static/images/bench_ex.png" alt="BioVITA Bench retrieval examples: audio-to-image, image-to-audio, audio-to-text, and text-to-audio species retrieval with spectrograms and animal photos" class="center">
             </div>
 
             
@@ -246,7 +295,7 @@
               <p>
                 We introduce BioVITA Train, a training dataset for VITA alignment. We curate 1.3 million audio clips and 2.3 million images with textual taxonomic annotations, covering 14k species and 34 ecological traits.
               </p>
-              <img src="static/images/comparison.png" alt="algebraic reasoning" class="center">
+              <img src="static/images/comparison.png" alt="Table comparing BioVITA Train with BEANS, AnimalSpeak, iNatSounds, and SSW60 by audio clips, images, taxonomy, species, and traits" class="center">
             </div>
 
             
@@ -268,7 +317,7 @@
               <p>
                 BioVITA Model consists of three encoders. Building upon BioCLIP 2, we train the audio encoder in Stage 1, and jointly train the audio and text encoders in Stage 2.
               </p>
-              <img src="static/images/model.png" alt="algebraic reasoning" class="center">
+              <img src="static/images/model.png" alt="BioVITA model: audio (HTS-AT), text (Transformer), and image (ViT-L/14) encoders trained in two stages with contrastive losses" class="center">
             </div>
 
       </div>
@@ -290,7 +339,7 @@
               <p>
                  Our BioVITA effectively handles all retrieval scenarios and significantly outperforms the tri-modal baselines. Stage 2, which incorporates visual information, further improves all retrieval scenarios by providing complementary cues for robust VITA alignment.
               </p>
-              <img src="static/images/main.png" alt="algebraic reasoning" class="center">
+              <img src="static/images/main.png" alt="Table and radar charts of top-1 and top-5 species-level retrieval across six audio, image, and text directions, comparing BioVITA with CLIP, CLAP, ImageBind, BioCLIP 2, and TaxaBind" class="center">
             </div>
 
             
@@ -307,7 +356,7 @@
                 <p>
                 Despite encountering entirely novel taxa, BioVITA demonstrates robust generalization. Consistent with observations in seen scenarios, the improvement from Stage 1 to Stage 2 underscores the crucial role of incorporating visual modalities for enhancing generalization.
                 </p>
-              <img src="static/images/unseen.png" alt="algebraic reasoning" class="center">
+              <img src="static/images/unseen.png" alt="Table of cross-modal retrieval results on the unseen species subset for ImageBind, BioCLIP 2, and BioVITA" class="center">
             </div>
           
           </div>
@@ -320,7 +369,7 @@
                 <p>
                 The left plot reports, among all species-level errors, the proportion in which the retrieved sample belongs to the correct genus, and the right plot reports the proportion belonging to the correct family. This suggests that the learned representations successfully capture hierarchical taxonomic structure.
                 </p>
-              <img src="static/images/error.png" alt="algebraic reasoning" class="center">
+              <img src="static/images/error.png" alt="Bar charts of the share of species-level retrieval errors that fall in the correct genus and family, for ImageBind and BioVITA" class="center">
             </div>
       
           </div>
@@ -336,14 +385,13 @@
       <div class="container is-fullwidth content">
         <h2 class="title is-3 has-text-centered">BibTeX</h2>
         <pre><code>
-@article{shinoda2026biovita,
-      title={BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment}, 
-      author={Risa Shinoda and Kaede Shiohara and Nakamasa Inoue and Kuniaki Saito and Hiroaki Santo and Fumio Okura},
-      year={2026},
-      eprint={2603.23883},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2603.23883}, 
+@article{Shinoda_2026_CVPR,
+    author    = {Shinoda, Risa and Shiohara, Kaede and Inoue, Nakamasa and Saito, Kuniaki and Santo, Hiroaki and Okura, Fumio},
+    title     = {BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment},
+    journal   = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {29336-29346}
 }
     </code></pre>
       </div>
@@ -354,7 +402,7 @@
         <div class="column is-8">
           <div class="content">
             <p>
-              This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+              This website is adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
                                                   href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
               Commons Attribution-ShareAlike 4.0 International License</a>.
             </p>
